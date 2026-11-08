@@ -3,5 +3,6 @@
   "private": true,
   "type": "module",
   "scripts": {"build": "node scripts/build.mjs", "verify": "node scripts/verify.mjs"},
-  "dependencies": {"hyperframes": "0.9.25", "gsap": "3.15.1", "playwright": "1.65.0"}
+  "dependencies": {"hyperframes": "0.9.25", "gsap": "3.15.1", "playwright": "1.65.0"},
+  "overrides": {"undici": "7.30.1"}
 }

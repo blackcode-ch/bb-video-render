@@ -32,11 +32,13 @@ jobs:
         working-directory: landscape
         run: |
           ../node_modules/.bin/hyperframes lint
+          ../node_modules/.bin/hyperframes check
           ../node_modules/.bin/hyperframes render --fps 30 --output ../output/le-trou-paysage.mp4
       - name: Render portrait with HyperFrames
         working-directory: portrait
         run: |
           ../node_modules/.bin/hyperframes lint
+          ../node_modules/.bin/hyperframes check
           ../node_modules/.bin/hyperframes render --fps 30 --output ../output/le-trou-portrait.mp4
       - name: Extract stills from the actual MP4s
         run: |
@@ -44,6 +46,7 @@ jobs:
           ffmpeg -v error -ss 8 -i output/le-trou-paysage.mp4 -frames:v 1 output/still-02.png
           ffmpeg -v error -ss 17 -i output/le-trou-paysage.mp4 -frames:v 1 output/still-03.png
           ffmpeg -v error -ss 2.5 -i output/le-trou-portrait.mp4 -frames:v 1 proof/portrait-01.png
+          cp proof/portrait-01.png output/poster-portrait.png
           ffmpeg -v error -ss 8 -i output/le-trou-portrait.mp4 -frames:v 1 proof/portrait-02.png
           ffmpeg -v error -ss 17 -i output/le-trou-portrait.mp4 -frames:v 1 proof/portrait-03.png
           ffmpeg -v error -ss 22.8 -i output/le-trou-paysage.mp4 -frames:v 1 proof/ending-landscape.png

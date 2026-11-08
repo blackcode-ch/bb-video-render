@@ -7,6 +7,7 @@ import assert from 'node:assert/strict';
 const root=resolve('output');
 const types={'.html':'text/html; charset=utf-8','.mp4':'video/mp4','.png':'image/png'};
 const server=createServer(async(req,res)=>{
+  if(req.url==='/favicon.ico'){res.writeHead(204).end();return;}
   const file=resolve(root,`.${decodeURIComponent(new URL(req.url,'http://localhost').pathname)}`);
   if(file!==root&&!file.startsWith(root+'/')){res.writeHead(403).end();return;}
   try{const data=await readFile(file===root?resolve(root,'index.html'):file);res.writeHead(200,{'content-type':types[extname(file)]||'text/html; charset=utf-8','content-length':data.length});res.end(data);}catch{res.writeHead(404).end();}
@@ -32,14 +33,17 @@ for(const width of [390,1440]){
  page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()}: ${r.url()}`)});
  await page.goto('http://127.0.0.1:4173/',{waitUntil:'networkidle'});
  await page.waitForFunction(()=>document.querySelector('video').readyState>=1);
+ await page.screenshot({path:`proof/page-${width}.png`,fullPage:true});
  assert.equal(await page.locator('.film').count(),6);
  assert.equal(await page.locator('video').getAttribute('playsinline'),'');
  const media=await page.locator('video').evaluate(async v=>{v.muted=true;await v.play();await new Promise(r=>setTimeout(r,300));v.pause();return{duration:v.duration,width:v.videoWidth,height:v.videoHeight,error:v.error?.message||null,played:v.currentTime>0}});
  assert.equal(media.error,null);assert(media.played);assert.equal(media.duration,24);
+ assert.equal(media.width,width===390?1080:1920);
+ assert.equal(media.height,width===390?1920:1080);
  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Page overflows horizontally');
- await page.locator('video').evaluate(v=>{v.currentTime=0;v.load()});
- await page.waitForTimeout(300);
- await page.screenshot({path:`proof/page-${width}.png`,fullPage:true});
+ await page.locator('video').evaluate(v=>{v.currentTime=2.5;});
+ await page.waitForFunction(()=>{const v=document.querySelector('video');return !v.seeking&&v.readyState>=2;});
+ await page.screenshot({path:`proof/playing-${width}.png`});
  await page.locator('#film-6 summary').click();
  await page.locator('#film-6').scrollIntoViewIfNeeded();
  await page.screenshot({path:`proof/storyboard-${width}.png`});
