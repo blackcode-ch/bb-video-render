@@ -3,7 +3,7 @@ const tl = gsap.timeline({paused:true});
 tl.fromTo('.one',{y:235},{y:0,duration:.85,ease:'power4.out'},.15)
   .fromTo('.two',{y:235},{y:0,duration:.95,ease:'power4.out'},.55)
   .fromTo('.underline',{scaleX:0},{scaleX:1,duration:.8,ease:'power3.inOut'},1.2)
-  .fromTo('.opening-note',{opacity:0,y:35},{opacity:1,y:0,duration:.65},1.4)
+  .fromTo('.opening-note',{opacity:0,y:35},{opacity:1,y:0,duration:.5},.25)
   .to('.opening',{opacity:0,y:-55,duration:.45,ease:'power2.in'},3.75);
 for(const [selector,start,end] of [['.openai',4.2,11.7],['.anthropic',12.2,20.7]]) {
   tl.fromTo(selector,{opacity:0,y:55},{opacity:1,y:0,duration:.5,ease:'power3.out'},start);
