@@ -1,0 +1,61 @@
+name: Render and verify Brigitte film
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      HYPERFRAMES_TELEMETRY_DISABLED: '1'
+      CI: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install free rendering tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-liberation
+          npm ci
+          npx playwright install --with-deps chromium
+      - name: Build the compositions and review page
+        run: |
+          node scripts/page.mjs
+          npm run build
+      - name: Render landscape with HyperFrames
+        working-directory: landscape
+        run: |
+          ../node_modules/.bin/hyperframes lint
+          ../node_modules/.bin/hyperframes render --fps 30 --output ../output/le-trou-paysage.mp4
+      - name: Render portrait with HyperFrames
+        working-directory: portrait
+        run: |
+          ../node_modules/.bin/hyperframes lint
+          ../node_modules/.bin/hyperframes render --fps 30 --output ../output/le-trou-portrait.mp4
+      - name: Extract stills from the actual MP4s
+        run: |
+          ffmpeg -v error -ss 2.5 -i output/le-trou-paysage.mp4 -frames:v 1 output/still-01.png
+          ffmpeg -v error -ss 8 -i output/le-trou-paysage.mp4 -frames:v 1 output/still-02.png
+          ffmpeg -v error -ss 17 -i output/le-trou-paysage.mp4 -frames:v 1 output/still-03.png
+          ffmpeg -v error -ss 2.5 -i output/le-trou-portrait.mp4 -frames:v 1 proof/portrait-01.png
+          ffmpeg -v error -ss 8 -i output/le-trou-portrait.mp4 -frames:v 1 proof/portrait-02.png
+          ffmpeg -v error -ss 17 -i output/le-trou-portrait.mp4 -frames:v 1 proof/portrait-03.png
+          ffmpeg -v error -ss 22.8 -i output/le-trou-paysage.mp4 -frames:v 1 proof/ending-landscape.png
+          ffmpeg -v error -ss 22.8 -i output/le-trou-portrait.mp4 -frames:v 1 proof/ending-portrait.png
+      - name: Verify media and browser rendering at 390 and 1440
+        run: npm run verify
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: brigitte-video-night
+          path: |
+            output/
+            proof/
+          if-no-files-found: error
+          retention-days: 14
