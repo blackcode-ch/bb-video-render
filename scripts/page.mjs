@@ -11,6 +11,13 @@ for(const b of boards) {if(b.scenes.reduce((s,r)=>s+r[0],0)!==b.duration) throw 
 // Use the legible portrait cut directly on phones; preserve native playback controls.
 let html=await readFile('page/index.html','utf8');
 html=html.replace('<title>', '<link rel="icon" href="data:,"><title>')
+  .replace('Six storyboards français et un premier film de 24 secondes, en paysage et en portrait.','Six storyboards de contenu et un test technique de production vidéo de 24 secondes.')
+  .replace('Six films.<br>Un premier <em>mouvement.</em>','Six storyboards.<br>Un test <em>technique.</em>')
+  .replace('De l’installation au travail quotidien : six récits courts pour comprendre Brigitte. Et une première animation de « Le trou, c’est vous. » à regarder.','De l’installation au travail quotidien : les contenus, les séquences et les faits de six films. Aucun choix artistique n’est fixé. Le clip sert uniquement à vérifier la chaîne de production.')
+  .replace('<video controls','<p class="test-label"><strong>Test technique de la chaîne de production, pas un choix de style</strong></p><p>Objectif : vérifier le rendu HyperFrames dans CI, sa durée, sa qualité de sortie et sa facilité de pilotage. L’apparence de cet essai ne détermine pas celle des futurs films.</p><video controls')
+  .replace('Ouverture du film 06. Les réserves et dates font partie des chiffres.','Essai technique sur le contenu du film 06. Les réserves et dates font partie des chiffres.')
+  .replace('<h2>Les six storyboards</h2>','<h2>Les six storyboards</h2><p>Contenu et séquence uniquement : ce qui est montré, les mots, les durées, les faits et leur état. Couleurs, typographie, représentation et traitement du mouvement restent à choisir.</p>')
+  .replace('Échantillon vidéo de 24 secondes','Test technique de 24 secondes')
   .replace('24 secondes · sans voix · 1920 × 1080','24 secondes · sans voix · paysage et portrait')
   .replace('@media(max-width:650px){','@media(max-width:650px){video{aspect-ratio:9/16}')
   .replace('</body>',`<script>if(matchMedia('(max-width:650px)').matches){const v=document.querySelector('video');v.src='le-trou-portrait.mp4';v.poster='poster-portrait.png';const a=document.querySelector('.caption a');a.href='le-trou-paysage.mp4';a.textContent='Voir la version paysage ↗';}</script></body>`);

@@ -1,45 +1,292 @@
 [
-  {"title":"De la livraison à la première question","duration":40,"intro":"Le parcours d’installation proposé. Toutes les étapes sur la Box physique restent prévues.","scenes":[
-    [8,"Le colis entre dans le cadre. Un contour de bureau se dessine autour de lui.","Une box dans vos locaux. Une mise en route préparée avec vous.","Prévu","/technologie/","Le site décrit une box dans les locaux et une installation sur place. Le déballage est une mise en scène du parcours prévu."],
-    [8,"Le boîtier se pose sur une étagère. Un trait le relie au réseau de l’étude.","La box reste chez vous, branchée sur le réseau de votre étude.","Prévu","/technologie/","Section « Local, concrètement ». Aucun modèle de matériel ni type de câble n’est annoncé."],
-    [8,"Une fiche « usages · documents · accès » reçoit trois coches de l’étude.","Vos documents. Vos accès. Les fonctions convenues avec votre étude.","Prévu","/sur-mesure/","La configuration, les connexions, le support et la conservation sont définis par écrit avant l’engagement."],
-    [8,"Deux personnes devant un écran simplifié ; une bulle « formation » apparaît.","Notre équipe vient sur place pour l’installation et la prise en main.","Prévu","/technologie/","Installation, formation et accompagnement pendant les premières semaines : parcours annoncé, pas preuve d’un déploiement effectué."],
-    [8,"Dans un écran marqué « aperçu · prévu », une question s’écrit ; un curseur de relecture souligne la réponse.","Une première question. Une réponse à relire. Vous décidez.","Prévu","/","Le site décrit la question aux dossiers et la vérification par l’avocat. La démo actuelle est une maquette sur des pièces inventées."]
-  ]},
-  {"title":"Des fichiers de l’étude à la Box","duration":40,"intro":"Un trajet visible, sans promesse que les données ne sortent jamais. Le mode d’import détaillé reste à définir.","scenes":[
-    [8,"Trois dossiers fictifs sur un PC. L’étude en sélectionne un ; les deux autres restent en place.","Votre étude choisit ce qu’elle dépose.","Prévu","/technologie/","L’étude choisit les documents confiés à Brigitte. Aucun import automatique de tous les fichiers n’est promis."],
-    [8,"Le seul dossier choisi traverse un trait « réseau de l’étude » du PC à la Box. Les autres ne bougent pas.","Les fichiers choisis rejoignent la Box par le réseau de l’étude.","Prévu","/technologie/","La Box est branchée au réseau interne et reçoit les documents déposés. Le protocole, l’interface d’import et les formats acceptés restent à définir."],
-    [8,"Le dossier se range dans le boîtier. Une loupe travaille à l’intérieur ; aucune flèche vers le nuage dans ce parcours par défaut.","Par défaut, les documents sont stockés et analysés sur la box.","Prévu","/technologie/","Section « Local, concrètement ». Cette scène représente le fonctionnement local visé, pas une mesure sur le matériel livré."],
-    [8,"Trois portes apparaissent : Standard, Renforcé, Sans connexion externe. La troisième porte porte « à confirmer ».","Les connexions autorisées dépendent du cadre choisi avec votre étude.","Cadre publié","/technologie/","Trois cadres : support chiffré ; sécurité de l’étude ; sans connexion externe à étudier et valider avant engagement."],
-    [8,"Une porte « support » s’ouvre à l’initiative de l’étude, un trait pointillé passe, puis elle se referme.","Pour le support : une connexion chiffrée, une tâche précise, puis fermeture.","Prévu","/technologie/","Cadre Standard. Les accès de support et flux éventuels vers des services externes sont définis avec l’étude ; ne pas dire « rien ne sort »."]
-  ]},
-  {"title":"Une journée au bureau, sur Windows","duration":40,"intro":"Un scénario d’usage sur un PC Windows. L’interface montrée est un aperçu prévu, sans installateur ni connexion produits présentés comme livrés.","scenes":[
-    [8,"Sur un bureau Windows schématique, une fenêtre « Brigitte · aperçu prévu » s’ouvre. Aucun écran client réel.","Sur votre PC, un espace pour travailler avec vos dossiers.","Prévu","/","Le site décrit les usages ; il ne garantit pas encore un client Windows livré ni un mode d’installation précis."],
-    [8,"Un dossier fictif est sélectionné. Son titre reste visible au-dessus de la conversation.","Choisissez le dossier sur lequel travailler.","Prévu","/technologie/","L’étude choisit les documents déposés. Le sélecteur de dossier est une proposition d’interface."],
-    [8,"La phrase « Prépare une chronologie à partir de ces pièces » s’écrit ; les pièces se rangent sur une ligne du temps.","Une chronologie pour retrouver le fil.","Prévu","/demo/","La démo publique illustre une chronologie sur des pièces inventées ; elle se présente explicitement comme une maquette animée."],
-    [8,"Deux références apparaissent à côté d’une réponse. Une main ouvre la pièce source ; un point incertain est souligné.","Retrouvez les documents d’appui. Vérifiez les points incertains.","Prévu","/","Le site décrit une réponse appuyée sur les documents confiés et les points qui restent à vérifier. Pas de garantie d’exactitude."],
-    [8,"L’avocate corrige le brouillon ; la mention « à valider » devient « relu par l’avocate ».","Brigitte prépare. Vous relisez et décidez.","Principe publié","/technologie/","L’envoi, la signature et la facturation restent faits par une personne de l’étude. Aucun envoi autonome n’est montré."]
-  ]},
-  {"title":"Poser une question à distance","duration":40,"intro":"Un scénario prévu, soumis à validation technique avec l’étude. Le site ne décrit pas encore de parcours d’accès distant opérationnel.","scenes":[
-    [8,"Un ordinateur hors du bureau et la Box dans l’étude. Entre les deux, un trait pointillé reste interrompu.","À distance : un accès à définir avec votre étude.","Prévu","/sur-mesure/","Le site demande de définir les accès et connexions. Il ne publie ni application distante, ni procédure d’authentification, ni protocole."],
-    [8,"Une fiche d’accès se complète : qui, quels dossiers, quelles connexions. Le responsable de l’étude la relit.","D’abord, convenir des accès et des protections.","Prévu","/sur-mesure/","Configuration et connexions autorisées définies par écrit. Les mécanismes d’authentification restent à valider ; aucune méthode précise n’est promise."],
-    [8,"Une porte « accès autorisé · prévu » laisse passer une question et le dossier choisi vers la Box.","La question et les documents nécessaires traversent la connexion autorisée.","Prévu","/technologie/","Scénario proposé, pas fonction démontrée. À distance, les échanges empruntent le réseau ; on ne peut donc pas affirmer que rien ne quitte les locaux."],
-    [8,"Dans le bureau, la Box prépare une réponse. Celle-ci revient vers l’écran distant le long du même trait pointillé.","Le traitement local visé ; une réponse qui revient sur votre écran.","Prévu","/comprendre-ia/","« Le calcul sur place » est le principe annoncé. Le parcours distant et ses flux doivent être testés avant toute promesse produit."],
-    [8,"L’avocate relit. La fenêtre se ferme ; le trait pointillé disparaît avec elle.","Vous vérifiez la réponse. Vous gardez la décision.","Prévu","/comprendre-ia/","« L’avocat vérifie et décide ». La fermeture de session illustrée est un parcours prévu, pas une garantie de révocation technique déjà validée."]
-  ]},
-  {"title":"Ce que l’agent prépare pour vous","duration":40,"intro":"Les fonctions visibles dans la démo sont illustrées sur des pièces inventées. Elles ne prouvent pas un agent complet livré sur la Box.","scenes":[
-    [8,"Une question fait remonter trois pièces fictives ; une réponse apparaît avec ses références.","Retrouver une information et ses documents d’appui.","Prévu","/","Fonction décrite sur l’accueil. Les points incertains restent à vérifier ; une fonction annoncée n’est pas une preuve de disponibilité sur la Box."],
-    [8,"Des dates extraites de pièces fictives prennent place sur une chronologie, avec leurs sources.","Remettre les événements dans l’ordre.","Prévu","/demo/","Chronologie illustrée par la maquette publique. Pas de démonstration sur un dossier réel."],
-    [8,"Un projet de courrier se forme ; son en-tête porte « brouillon ». Une main corrige une phrase.","Préparer un projet de courrier. Le relire avant de l’envoyer.","Prévu","/","Projet de courrier et synthèse décrits sur l’accueil ; la démo montre un e-mail fictif. Envoi réservé à une personne de l’étude."],
-    [8,"Messagerie, agenda et documents restent grisés, reliés par des pointillés étiquetés « prévu ».","Des connexions en lecture seule, selon ce que votre étude choisit d’activer.","Prévu","/technologie/","Connexions annoncées comme possibles, si l’étude le souhaite. Ne pas les présenter comme des intégrations produit livrées."],
-    [8,"Le brouillon s’arrête devant trois boutons tenus par une main : envoyer, signer, facturer.","L’envoi, la signature et la facturation restent faits par une personne de votre étude.","Principe publié","/technologie/","Phrase du site. Le rôle humain reste explicite ; aucune décision juridique ni action externe autonome n’est montrée."]
-  ]},
-  {"title":"Le trou, c’est vous.","duration":54,"intro":"Le propos et les chiffres de la page Comprendre l’IA, avec leurs dates et leurs limites. L’échantillon rendu couvre l’ouverture et les deux paires de barres.","scenes":[
-    [6,"« Le trou, » se révèle, puis « c’est vous. » en rouge. Un filet se trace sous le titre.","Le trou, c’est vous. Des milliards à financer. Votre travail est déjà un marché.","Texte publié","/comprendre-ia/#c5","Titre et introduction du site. [5] OpenAI, The Work Now Within Reach, 08.09.2026, et Building abundant intelligence. Angle de campagne, pas déclaration d’un déficit."],
-    [10,"Deux barres OpenAI s’allongent sur l’échelle commune 0–895 Md USD. Les valeurs finales restent fixes.","OpenAI — Investissement annoncé : 500 Md USD. Stargate · sur 4 ans · 21.01.2025. Revenus annualisés : 24 Md USD. 2 Md/mois × 12 · calcul au 31.03.2026.","Chiffres publiés","/comprendre-ia/#c1","[1] OpenAI — Announcing The Stargate Project, 21 janvier 2025. [2] OpenAI — OpenAI raises $122 billion to accelerate the next phase of AI, 31 mars 2026. Intention d’investissement avec partenaires ; revenus annualisés, ni bénéfice ni montant annuel encaissé."],
-    [12,"Les deux barres Anthropic prennent le relais sur la même échelle. La seconde reste courte, sans agrandissement trompeur.","Anthropic — Engagements de calcul et d’infrastructure : 895 Md USD. Dossier d’entrée en bourse · au 30.09.2026 et après · dont 447,5 Md avant fin 2030. Revenus sur 9 mois : 33 Md USD. Janvier à septembre 2026 · même dossier.","Chiffres publiés","/comprendre-ia/#c3","[3–4] Anthropic, PBC — Form S-1/A, SEC, 2 novembre 2026. Le site arrondit 895,4 à 895 et 33,2 à 33. Engagements pluriannuels et revenus sur neuf mois, pas un rythme annualisé."],
-    [8,"Les deux graphiques s’effacent ; la réserve reste seule, lisible, puis un trait souligne « différentes ».","Engagements pluriannuels et revenus : deux mesures différentes. Aucun déficit calculé. Les barres partagent une échelle de 0 à 895 Md USD.","Texte publié","/comprendre-ia/","Réserve du graphique, reprise mot pour mot. On ne soustrait pas les revenus des engagements et on ne calcule pas de « trou » financier."],
-    [10,"Un dossier passe à une infrastructure distante ; la silhouette de l’avocat et son obligation restent à gauche.","Le dossier part. Vous restez responsable. Traitement distant et entraînement sont deux choses différentes.","Texte publié","/comprendre-ia/#c7","Le site distingue traitement, entraînement et obligations. Il ne prétend ni entraînement automatique, ni vente des données, ni infraction automatique liée à une IA distante."],
-    [8,"Le dossier revient au centre de l’étude. Trois mots s’affichent : calcul, connexions, décision. Badge « prévu » sur le calcul local.","Le calcul sur place. Les connexions que vous autorisez. L’avocat vérifie et décide.","Prévu","/comprendre-ia/","Formulations du site. Fonctionnement sur la Box physique encore à valider ; l’installation locale n’est pas une certification de conformité."]
-  ]}
+  {
+    "title": "De la livraison à la première question",
+    "duration": 40,
+    "intro": "Le parcours d’installation proposé. Toutes les étapes sur la Box physique restent prévues.",
+    "scenes": [
+      [
+        8,
+        "Livraison de la Box dans les locaux de l’étude.",
+        "Une box dans vos locaux. Une mise en route préparée avec vous.",
+        "Prévu",
+        "/technologie/",
+        "Le site décrit une box dans les locaux et une installation sur place. Le déballage est une mise en scène du parcours prévu."
+      ],
+      [
+        8,
+        "La Box dans les locaux et sa connexion au réseau de l’étude.",
+        "La box reste chez vous, branchée sur le réseau de votre étude.",
+        "Prévu",
+        "/technologie/",
+        "Section « Local, concrètement ». Aucun modèle de matériel ni type de câble n’est annoncé."
+      ],
+      [
+        8,
+        "Les usages, documents et accès convenus avec l’étude.",
+        "Vos documents. Vos accès. Les fonctions convenues avec votre étude.",
+        "Prévu",
+        "/sur-mesure/",
+        "La configuration, les connexions, le support et la conservation sont définis par écrit avant l’engagement."
+      ],
+      [
+        8,
+        "L’équipe d’installation et les collaborateurs de l’étude lors de la formation.",
+        "Notre équipe vient sur place pour l’installation et la prise en main.",
+        "Prévu",
+        "/technologie/",
+        "Installation, formation et accompagnement pendant les premières semaines : parcours annoncé, pas preuve d’un déploiement effectué."
+      ],
+      [
+        8,
+        "Une première question et une réponse à vérifier, avec la mention « aperçu · prévu ».",
+        "Une première question. Une réponse à relire. Vous décidez.",
+        "Prévu",
+        "/",
+        "Le site décrit la question aux dossiers et la vérification par l’avocat. La démo actuelle est une maquette sur des pièces inventées."
+      ]
+    ]
+  },
+  {
+    "title": "Des fichiers de l’étude à la Box",
+    "duration": 40,
+    "intro": "Un trajet visible, sans promesse que les données ne sortent jamais. Le mode d’import détaillé reste à définir.",
+    "scenes": [
+      [
+        8,
+        "Des dossiers fictifs sur un PC et le dossier choisi par l’étude pour le dépôt.",
+        "Votre étude choisit ce qu’elle dépose.",
+        "Prévu",
+        "/technologie/",
+        "L’étude choisit les documents confiés à Brigitte. Aucun import automatique de tous les fichiers n’est promis."
+      ],
+      [
+        8,
+        "Le PC, le dossier sélectionné, le réseau de l’étude et la Box destinataire.",
+        "Les fichiers choisis rejoignent la Box par le réseau de l’étude.",
+        "Prévu",
+        "/technologie/",
+        "La Box est branchée au réseau interne et reçoit les documents déposés. Le protocole, l’interface d’import et les formats acceptés restent à définir."
+      ],
+      [
+        8,
+        "Le stockage et l’analyse du dossier sur la Box, dans le parcours par défaut.",
+        "Par défaut, les documents sont stockés et analysés sur la box.",
+        "Prévu",
+        "/technologie/",
+        "Section « Local, concrètement ». Cette scène représente le fonctionnement local visé, pas une mesure sur le matériel livré."
+      ],
+      [
+        8,
+        "Les trois cadres : Standard, Renforcé, Sans connexion externe. Mention « à confirmer » pour le troisième.",
+        "Les connexions autorisées dépendent du cadre choisi avec votre étude.",
+        "Cadre publié",
+        "/technologie/",
+        "Trois cadres : support chiffré ; sécurité de l’étude ; sans connexion externe à étudier et valider avant engagement."
+      ],
+      [
+        8,
+        "Les trois étapes du support : ouverture d’une connexion par l’étude, tâche convenue, fermeture de la connexion.",
+        "Pour le support : une connexion chiffrée, une tâche précise, puis fermeture.",
+        "Prévu",
+        "/technologie/",
+        "Cadre Standard. Les accès de support et flux éventuels vers des services externes sont définis avec l’étude ; ne pas dire « rien ne sort »."
+      ]
+    ]
+  },
+  {
+    "title": "Une journée au bureau, sur Windows",
+    "duration": 40,
+    "intro": "Un scénario d’usage sur un PC Windows. L’interface montrée est un aperçu prévu, sans installateur ni connexion produits présentés comme livrés.",
+    "scenes": [
+      [
+        8,
+        "Un PC Windows et l’espace de travail Brigitte, avec la mention « aperçu prévu ». Aucun dossier client réel.",
+        "Sur votre PC, un espace pour travailler avec vos dossiers.",
+        "Prévu",
+        "/",
+        "Le site décrit les usages ; il ne garantit pas encore un client Windows livré ni un mode d’installation précis."
+      ],
+      [
+        8,
+        "Le dossier fictif sélectionné et son titre.",
+        "Choisissez le dossier sur lequel travailler.",
+        "Prévu",
+        "/technologie/",
+        "L’étude choisit les documents déposés. Le sélecteur de dossier est une proposition d’interface."
+      ],
+      [
+        8,
+        "La demande « Prépare une chronologie à partir de ces pièces », puis la chronologie et les pièces correspondantes.",
+        "Une chronologie pour retrouver le fil.",
+        "Prévu",
+        "/demo/",
+        "La démo publique illustre une chronologie sur des pièces inventées ; elle se présente explicitement comme une maquette animée."
+      ],
+      [
+        8,
+        "La réponse, deux références, une pièce source consultée et un point restant à vérifier.",
+        "Retrouvez les documents d’appui. Vérifiez les points incertains.",
+        "Prévu",
+        "/",
+        "Le site décrit une réponse appuyée sur les documents confiés et les points qui restent à vérifier. Pas de garantie d’exactitude."
+      ],
+      [
+        8,
+        "Un brouillon, les corrections de l’avocate et l’état « relu par l’avocate ».",
+        "Brigitte prépare. Vous relisez et décidez.",
+        "Principe publié",
+        "/technologie/",
+        "L’envoi, la signature et la facturation restent faits par une personne de l’étude. Aucun envoi autonome n’est montré."
+      ]
+    ]
+  },
+  {
+    "title": "Poser une question à distance",
+    "duration": 40,
+    "intro": "Un scénario prévu, soumis à validation technique avec l’étude. Le site ne décrit pas encore de parcours d’accès distant opérationnel.",
+    "scenes": [
+      [
+        8,
+        "Un ordinateur hors du bureau, la Box dans l’étude et la mention « accès distant prévu, à définir ».",
+        "À distance : un accès à définir avec votre étude.",
+        "Prévu",
+        "/sur-mesure/",
+        "Le site demande de définir les accès et connexions. Il ne publie ni application distante, ni procédure d’authentification, ni protocole."
+      ],
+      [
+        8,
+        "La fiche des accès : personnes autorisées, dossiers accessibles, connexions et protections convenues avec l’étude.",
+        "D’abord, convenir des accès et des protections.",
+        "Prévu",
+        "/sur-mesure/",
+        "Configuration et connexions autorisées définies par écrit. Les mécanismes d’authentification restent à valider ; aucune méthode précise n’est promise."
+      ],
+      [
+        8,
+        "La question et les documents nécessaires transmis à la Box par la connexion autorisée, avec la mention « prévu ».",
+        "La question et les documents nécessaires traversent la connexion autorisée.",
+        "Prévu",
+        "/technologie/",
+        "Scénario proposé, pas fonction démontrée. À distance, les échanges empruntent le réseau ; on ne peut donc pas affirmer que rien ne quitte les locaux."
+      ],
+      [
+        8,
+        "Le traitement prévu sur la Box dans l’étude, puis la réponse reçue sur l’ordinateur distant.",
+        "Le traitement local visé ; une réponse qui revient sur votre écran.",
+        "Prévu",
+        "/comprendre-ia/",
+        "« Le calcul sur place » est le principe annoncé. Le parcours distant et ses flux doivent être testés avant toute promesse produit."
+      ],
+      [
+        8,
+        "La vérification de la réponse par l’avocate, puis la fermeture de la session prévue.",
+        "Vous vérifiez la réponse. Vous gardez la décision.",
+        "Prévu",
+        "/comprendre-ia/",
+        "« L’avocat vérifie et décide ». La fermeture de session illustrée est un parcours prévu, pas une garantie de révocation technique déjà validée."
+      ]
+    ]
+  },
+  {
+    "title": "Ce que l’agent prépare pour vous",
+    "duration": 40,
+    "intro": "Les fonctions visibles dans la démo sont illustrées sur des pièces inventées. Elles ne prouvent pas un agent complet livré sur la Box.",
+    "scenes": [
+      [
+        8,
+        "Une question, trois pièces fictives et une réponse accompagnée de références.",
+        "Retrouver une information et ses documents d’appui.",
+        "Prévu",
+        "/",
+        "Fonction décrite sur l’accueil. Les points incertains restent à vérifier ; une fonction annoncée n’est pas une preuve de disponibilité sur la Box."
+      ],
+      [
+        8,
+        "Les dates des pièces fictives, leur ordre chronologique et les sources correspondantes.",
+        "Remettre les événements dans l’ordre.",
+        "Prévu",
+        "/demo/",
+        "Chronologie illustrée par la maquette publique. Pas de démonstration sur un dossier réel."
+      ],
+      [
+        8,
+        "Un projet de courrier identifié comme « brouillon », puis les corrections de l’avocate.",
+        "Préparer un projet de courrier. Le relire avant de l’envoyer.",
+        "Prévu",
+        "/",
+        "Projet de courrier et synthèse décrits sur l’accueil ; la démo montre un e-mail fictif. Envoi réservé à une personne de l’étude."
+      ],
+      [
+        8,
+        "Les connexions possibles à la messagerie, à l’agenda et aux documents, chacune identifiée comme « prévu ».",
+        "Des connexions en lecture seule, selon ce que votre étude choisit d’activer.",
+        "Prévu",
+        "/technologie/",
+        "Connexions annoncées comme possibles, si l’étude le souhaite. Ne pas les présenter comme des intégrations produit livrées."
+      ],
+      [
+        8,
+        "Le brouillon et les trois actions réservées à une personne de l’étude : envoyer, signer, facturer.",
+        "L’envoi, la signature et la facturation restent faits par une personne de votre étude.",
+        "Principe publié",
+        "/technologie/",
+        "Phrase du site. Le rôle humain reste explicite ; aucune décision juridique ni action externe autonome n’est montrée."
+      ]
+    ]
+  },
+  {
+    "title": "Le trou, c’est vous.",
+    "duration": 54,
+    "intro": "Le propos et les chiffres de la page Comprendre l’IA, avec leurs dates et leurs limites. Le contenu et son ordre sont définis ; la représentation graphique et le style restent à choisir.",
+    "scenes": [
+      [
+        6,
+        "Le titre « Le trou, c’est vous. », puis les deux phrases d’introduction et la référence [5].",
+        "Le trou, c’est vous. Des milliards à financer. Votre travail est déjà un marché.",
+        "Texte publié",
+        "/comprendre-ia/#c5",
+        "Titre et introduction du site. [5] OpenAI, The Work Now Within Reach, 08.09.2026, et Building abundant intelligence. Angle de campagne, pas déclaration d’un déficit."
+      ],
+      [
+        10,
+        "Les deux mesures OpenAI, leurs montants, leurs périodes et leurs sources. Si un graphique est retenu, échelle commune de 0 à 895 Md USD.",
+        "OpenAI — Investissement annoncé : 500 Md USD. Stargate · sur 4 ans · 21.01.2025. Revenus annualisés : 24 Md USD. 2 Md/mois × 12 · calcul au 31.03.2026.",
+        "Chiffres publiés",
+        "/comprendre-ia/#c1",
+        "[1] OpenAI — Announcing The Stargate Project, 21 janvier 2025. [2] OpenAI — OpenAI raises $122 billion to accelerate the next phase of AI, 31 mars 2026. Intention d’investissement avec partenaires ; revenus annualisés, ni bénéfice ni montant annuel encaissé."
+      ],
+      [
+        12,
+        "Les deux mesures Anthropic, leurs montants, leurs périodes et leurs sources. Si un graphique est retenu, même échelle de 0 à 895 Md USD.",
+        "Anthropic — Engagements de calcul et d’infrastructure : 895 Md USD. Dossier d’entrée en bourse · au 30.09.2026 et après · dont 447,5 Md avant fin 2030. Revenus sur 9 mois : 33 Md USD. Janvier à septembre 2026 · même dossier.",
+        "Chiffres publiés",
+        "/comprendre-ia/#c3",
+        "[3–4] Anthropic, PBC — Form S-1/A, SEC, 2 novembre 2026. Le site arrondit 895,4 à 895 et 33,2 à 33. Engagements pluriannuels et revenus sur neuf mois, pas un rythme annualisé."
+      ],
+      [
+        8,
+        "La réserve sur les mesures différentes, l’absence de déficit calculé et l’échelle commune des graphiques éventuels.",
+        "Engagements pluriannuels et revenus : deux mesures différentes. Aucun déficit calculé. Les barres partagent une échelle de 0 à 895 Md USD.",
+        "Texte publié",
+        "/comprendre-ia/",
+        "Réserve du graphique, reprise mot pour mot. On ne soustrait pas les revenus des engagements et on ne calcule pas de « trou » financier."
+      ],
+      [
+        10,
+        "Le dossier traité à distance et la responsabilité conservée par l’avocat. Distinction entre traitement et entraînement.",
+        "Le dossier part. Vous restez responsable. Traitement distant et entraînement sont deux choses différentes.",
+        "Texte publié",
+        "/comprendre-ia/#c7",
+        "Le site distingue traitement, entraînement et obligations. Il ne prétend ni entraînement automatique, ni vente des données, ni infraction automatique liée à une IA distante."
+      ],
+      [
+        8,
+        "Les trois principes : calcul sur place, connexions autorisées, décision de l’avocat. Mention « prévu » pour le calcul local sur la Box.",
+        "Le calcul sur place. Les connexions que vous autorisez. L’avocat vérifie et décide.",
+        "Prévu",
+        "/comprendre-ia/",
+        "Formulations du site. Fonctionnement sur la Box physique encore à valider ; l’installation locale n’est pas une certification de conformité."
+      ]
+    ]
+  }
 ]

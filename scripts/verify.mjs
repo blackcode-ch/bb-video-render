@@ -35,6 +35,7 @@ for(const width of [390,1440]){
  await page.waitForFunction(()=>document.querySelector('video').readyState>=1);
  await page.screenshot({path:`proof/page-${width}.png`,fullPage:true});
  assert.equal(await page.locator('.film').count(),6);
+ assert.equal(await page.locator('.test-label').innerText(),'Test technique de la chaîne de production, pas un choix de style');
  assert.equal(await page.locator('video').getAttribute('playsinline'),'');
  const media=await page.locator('video').evaluate(async v=>{v.muted=true;await v.play();await new Promise(r=>setTimeout(r,300));v.pause();return{duration:v.duration,width:v.videoWidth,height:v.videoHeight,error:v.error?.message||null,played:v.currentTime>0}});
  assert.equal(media.error,null);assert(media.played);assert.equal(media.duration,24);
